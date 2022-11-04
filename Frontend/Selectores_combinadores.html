@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            color: rgb(119, 45, 115);
+        }
+
+        div > p{
+            background-color: blueviolet;
+        }
+
+        section + p{
+            color: black;
+        }
+
+        section ~ p{
+            color: red;
+        }
+
+        div .clase > p{
+            color: rgb(28, 147, 54);
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <section class="clase">
+            <p>Hola mundo</p>
+            <p>test de hijo directo</p>
+        </section>
+        <section>
+            <p>no se colorea de verde</p>
+        </section>
+        <p>ola</p>
+        <p>test de selector combinador descendiente</p>
+        <p>aprender xd</p>
+    </div>
+</body>
+</html>
