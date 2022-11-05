@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: aquamarine;
+        }
+        p::first-letter{
+            background-color: brown;
+        }
+        p::before{
+            content:"f";
+        }
+        p:hover{
+            color: purple;
+        }
+        div p:nth-child(1){
+            background-color: blue;
+        }
+        input::placeholder{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <p>pseudo</p>
+    <div>
+        <p>Primero</p>
+        <p>segundo</p>
+        <p>tercero</p>
+    </div>
+    <input type="text" placeholder="Escribe tu nombre">
+</body>
+</html>
